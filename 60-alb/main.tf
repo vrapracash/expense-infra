@@ -52,7 +52,7 @@ resource "aws_lb_listener" "https" {
 module "records" {
   source  = "terraform-aws-modules/route53/aws//modules/records"
 
-  zone_name = var.zone_name #daws81s.online
+  zone_name = var.zone_name #veeraprakash.online
   records = [
     {
       name    = "expense-${var.environment}" # *.app-dev
